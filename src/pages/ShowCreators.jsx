@@ -5,7 +5,7 @@ import Card from "../components/creator/Card";
 import Hero from "../components/creator/Hero";
 import CreatorList from "../components/creator/CreatorList";
 import Container from "../components/layout/Container";
-import Loading from "../components/ui/Loading";
+import Loading from "../components/ui/loading";
 
 // ShowCreators.jsx
 import "../styles/pages/showCreators.css";
@@ -32,7 +32,7 @@ function ShowCreators() {
     }, []);
 
     if (loading) {
-        return <Loading/>;
+        return <loading/>;
     }
 
     return (

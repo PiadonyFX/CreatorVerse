@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import supabase from "../client";
 import Card from "../components/creator/Card";
 // ViewCreator.jsx
-import Loading from "../components/ui/Loading";
+import Loading from "../components/ui/loading";
 import "../styles/pages/viewCreator.css";
 import Toast from "../components/ui/Toast";
 import BackButton from "../components/ui/BackButton";
@@ -68,7 +68,7 @@ function ViewCreator() {
     };
 
     if (!creator) {
-        return <Loading />;
+        return <loading />;
     }
 
     return (

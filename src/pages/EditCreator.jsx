@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import supabase from "../client";
 import "../styles/pages/addCreator.css";
-import Loading from "../components/ui/Loading";
+import Loading from "../components/ui/loading";
 import Toast from "../components/ui/Toast";
 import BackButton from "../components/ui/BackButton";
 
@@ -90,7 +90,7 @@ function EditCreator() {
 
     if (loading) {
         return (
-            <Loading />
+            <loading />
         );
     }
 
