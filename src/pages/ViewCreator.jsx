@@ -68,7 +68,7 @@ function ViewCreator() {
     };
 
     if (!creator) {
-        return <Loading />;
+        return <loading />;
     }
 
     return (
