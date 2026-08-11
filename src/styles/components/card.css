@@ -1,0 +1,361 @@
+/* =========================
+   CREATOR CARD
+========================= */
+
+.creator-card {
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: var(--transition);
+}
+
+.creator-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow-lg);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.creator-image-wrapper {
+    width: 100%;
+
+    height: 260px;
+
+    overflow: hidden;
+
+    background: var(--color-surface-2);
+}
+
+.creator-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    /*
+       contain pèmèt tout imaj la rete vizib.
+       Sa evite koupe tèt creator la.
+    */
+    object-fit: contain;
+
+    object-position: center;
+
+    transition: var(--transition);
+}
+
+.creator-card:hover .creator-image {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.creator-content {
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 24px;
+}
+
+.creator-content h2 {
+    margin: 0 0 12px;
+
+    color: var(--color-text);
+
+    font-size: 1.5rem;
+
+    line-height: 1.25;
+
+    overflow-wrap: break-word;
+}
+
+.creator-content p {
+    margin: 0 0 20px;
+
+    color: var(--color-text-muted);
+
+    line-height: 1.7;
+
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 3;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   CHANNEL
+========================= */
+
+.creator-channel {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-bottom: 24px;
+
+    color: var(--color-gold);
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: var(--transition);
+}
+
+.creator-channel:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.creator-actions {
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--color-border);
+}
+
+
+/* =========================
+   DELETE BUTTON
+========================= */
+
+.btn-danger {
+    background: #d64545;
+
+    color: white;
+
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #b83232;
+}
+
+
+/* =========================
+   DETAIL CARD
+========================= */
+
+.detail-card {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    gap: 2rem;
+
+    align-items: stretch;
+}
+
+.detail-card .creator-image-wrapper {
+    height: 100%;
+
+    min-height: 500px;
+}
+
+.detail-card .creator-content {
+    justify-content: center;
+}
+
+.detail-card .btn-btn {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 16px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .view-page {
+        padding: 60px 24px;
+    }
+
+    .view-container {
+        width: 90%;
+        max-width: 700px;
+    }
+    
+    .creator-image-wrapper {
+        height: 230px;
+    }
+
+    .creator-content {
+        padding: 20px;
+    }
+
+    .creator-content h2 {
+        font-size: 1.35rem;
+    }
+
+    .detail-card {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+        gap: 1.5rem;
+    }
+
+    .detail-card .creator-image-wrapper {
+        min-height: 400px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .creator-card:hover {
+        transform: none;
+
+        box-shadow: none;
+    }
+
+    .creator-image-wrapper {
+        height: 220px;
+    }
+
+    .creator-content {
+        padding: 18px;
+    }
+
+    .creator-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .creator-content p {
+        font-size: 0.92rem;
+
+        line-height: 1.6;
+
+        margin-bottom: 16px;
+    }
+
+    .creator-channel {
+        margin-bottom: 20px;
+
+        font-size: 0.9rem;
+    }
+
+    .creator-actions {
+        padding-top: 16px;
+    }
+
+    .creator-actions .btn {
+        width: 100%;
+    }
+
+
+    /* DETAIL */
+
+    .detail-card {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .detail-card .creator-image-wrapper {
+        height: 300px;
+
+        min-height: 300px;
+    }
+
+    .detail-card .creator-content {
+        padding: 20px;
+    }
+
+    .detail-card .btn-btn {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .detail-card .btn-btn .btn {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .creator-image-wrapper {
+        height: 200px;
+    }
+
+    .creator-content {
+        padding: 16px;
+    }
+
+    .creator-content h2 {
+        font-size: 1.15rem;
+    }
+
+    .creator-content p {
+        font-size: 0.86rem;
+
+        line-height: 1.55;
+    }
+
+    .creator-channel {
+        font-size: 0.85rem;
+    }
+
+
+    /* DETAIL */
+
+    .detail-card .creator-image-wrapper {
+        height: 250px;
+
+        min-height: 250px;
+    }
+
+    .detail-card .creator-content {
+        padding: 18px 16px;
+    }
+}

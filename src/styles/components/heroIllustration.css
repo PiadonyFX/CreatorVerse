@@ -1,0 +1,60 @@
+.hero-illustration{
+
+    position:relative;
+
+    height:500px;
+
+}
+.floating-card{
+
+    position:absolute;
+
+    width:220px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:var(--color-surface);
+
+    box-shadow:var(--shadow-lg);
+
+    border:1px solid var(--color-border);
+
+}
+.floating-card img{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:15px;
+
+}
+.card-one{
+
+    top:20px;
+
+    left:30px;
+
+}
+
+.card-two{
+
+    right:0;
+
+    top:170px;
+
+}
+
+.card-three{
+
+    bottom:0;
+
+    left:100px;
+
+}

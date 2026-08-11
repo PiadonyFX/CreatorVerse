@@ -1,0 +1,382 @@
+.hero {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    min-height: 75vh;
+
+    display: flex;
+    /* align-items: center; */
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(121, 40, 202, 0.16),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(0, 255, 204, 0.08),
+            transparent 40%
+        );
+}
+
+
+/* =========================
+   HERO GRID
+========================= */
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+
+    gap: 3rem;
+
+    align-items: center;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    min-width: 0;
+}
+
+.hero h1 {
+    margin: 0;
+
+    max-width: 650px;
+
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    overflow-wrap: break-word;
+}
+
+.hero h1 span {
+    color: var(--color-gold);
+}
+
+.hero p {
+    max-width: 550px;
+
+    margin: 2rem 0;
+
+    font-size: 1.1rem;
+
+    line-height: 1.7;
+
+    color: var(--color-text-muted);
+}
+
+
+/* =========================
+   HERO ACTIONS
+========================= */
+
+.hero-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-top: 10rem;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero-visual {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    min-width: 0;
+
+    overflow: visible;
+}
+
+/*
+   Limite largeur de l'illustration
+   pour éviter qu'elle déborde de sa colonne.
+*/
+.hero-visual > * {
+    width: min(100%, 560px);
+
+    max-width: 560px;
+
+    margin-inline: auto;
+}
+
+
+/* =========================
+   1280px
+========================= */
+
+@media (max-width: 1280px) {
+
+    .hero-grid {
+        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+
+        gap: 2rem;
+    }
+
+    .hero-visual > * {
+        width: min(100%, 480px);
+
+        max-width: 480px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.7rem, 4.5vw, 4.2rem);
+    }
+}
+
+
+/* =========================
+   1024px
+========================= */
+
+@media (max-width: 1100px) {
+
+    .hero {
+        padding-inline: 20px;
+    }
+
+    .hero-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+
+        gap: 1.5rem;
+    }
+
+    .hero-visual > * {
+        width: min(100%, 400px);
+
+        max-width: 400px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 4.5vw, 3.7rem);
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+
+/* =========================
+   TABLET
+   768px - 900px
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        min-height: 90vh;
+
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .hero h1 {
+        max-width: 700px;
+
+        font-size: clamp(2.2rem, 5vw, 3rem);
+
+        line-height: 1.1;
+    }
+
+    .hero p {
+        max-width: 620px;
+
+        margin: 1.2rem 0;
+
+        font-size: 0.95rem;
+
+        line-height: 1.6;
+    }
+
+    .hero-actions {
+        justify-content: center;
+
+        margin-top: 1.5rem;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+}
+
+
+/* =========================
+   SMALL TABLET
+   768px / 820px
+========================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .hero {
+        min-height: 80vh;
+
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.15rem, 4.8vw, 2.8rem);
+        padding-bottom: 20px;
+        padding-top: 160px;
+        max-width: 650px;
+    }
+
+    .hero p {
+        max-width: 600px;
+
+        font-size: 0.9rem;
+    }
+
+    .hero-actions {
+        margin-top: 170px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 75vh;
+
+        height: 75vh;
+
+        padding-top: 30px;
+
+        display: flex;
+
+        /* align-items: center; */
+    }
+
+    .hero-grid {
+        width: 100%;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+
+        font-size: clamp(1.8rem, 8vw, 2.25rem);
+
+        padding-top: 170px;
+        padding-bottom: 25px;
+        line-height: 1.12;
+
+        font-weight: 700;
+    }
+
+    .hero p {
+        max-width: 95%;
+
+        margin: 1rem 0;
+
+        font-size: 0.82rem;
+
+        line-height: 1.55;
+    }
+
+    .hero-actions {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+
+        margin-top: 6.2rem;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+
+        max-width: 300px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   375 / 395 / 400px
+========================= */
+
+@media (max-width: 400px) {
+
+    .hero {
+        min-height: 75vh;
+
+        height: 75vh;
+
+        padding:30px 14px 30px;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+
+        line-height: 1.12;
+    }
+
+    .hero p {
+        max-width: 92%;
+
+        font-size: 0.78rem;
+
+        line-height: 1.5;
+
+        margin: 0.9rem 0;
+    }
+
+    .hero-actions {
+        margin-top: 6rem;
+    }
+
+    .hero-actions .btn {
+        max-width: 280px;
+    }
+}
