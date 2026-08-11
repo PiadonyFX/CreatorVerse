@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import supabase from "../../client";
 import Card from "./Card";
-import Loading from "../ui/Loading";
+import Loading from "../ui/loading";
 import "../../styles/components/creatorList.css";
 
 function CreatorList() {
