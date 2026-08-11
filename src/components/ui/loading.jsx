@@ -5,7 +5,7 @@ function Loading() {
         <div className="loading-screen">
             <div className="loading-spinner"></div>
 
-            <p>Chargement...</p>
+            <p>Loading...</p>
         </div>
     );
 }
