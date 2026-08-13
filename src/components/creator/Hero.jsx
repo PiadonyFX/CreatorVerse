@@ -1,13 +1,23 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import Container from "../layout/Container";
 import "../../styles/components/hero.css";
 
 import HeroIllustration from "./HeroIllustration";
+import AboutButton from "../ui/AboutButton";
+import AboutModal from "../ui/AboutModal";
 
 function Hero() {
+  const [showAbout, setShowAbout] = useState(false);
   return (
     <section className="hero">
+
+      <div className="hero-about">
+        <AboutButton
+          onClick={() => setShowAbout(true)}
+        />
+      </div>
 
       <Container>
 
@@ -59,7 +69,11 @@ function Hero() {
         </div>
 
       </Container>
-
+      {showAbout && (
+        <AboutModal
+          onClose={() => setShowAbout(false)}
+        />
+      )}
     </section>
   );
 }

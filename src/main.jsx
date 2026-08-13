@@ -6,6 +6,8 @@ import "./styles/variables.css";
 import "./styles/globals.css";
 import "./styles/components/Toast.css";
 import "./styles/components/backButton.css";
+import "./styles/components/aboutModal.css";
+import "./styles/components/aboutButton.css";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

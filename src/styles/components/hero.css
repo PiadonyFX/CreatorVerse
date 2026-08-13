@@ -127,6 +127,14 @@
     margin-inline: auto;
 }
 
+.hero-about {
+    position: absolute;
+
+    top: 24px;
+    right: 24px;
+
+    z-index: 10;
+}
 
 /* =========================
    1280px
@@ -241,6 +249,11 @@
     .hero-visual {
         display: none;
     }
+
+    .hero-about {
+        top: 18px;
+        right: 18px;
+    }
 }
 
 
@@ -343,7 +356,6 @@
 
 /* =========================
    SMALL MOBILE
-   375 / 395 / 400px
 ========================= */
 
 @media (max-width: 400px) {
@@ -378,5 +390,10 @@
 
     .hero-actions .btn {
         max-width: 280px;
+    }
+
+    .hero-about {
+        top: 14px;
+        right: 14px;
     }
 }
