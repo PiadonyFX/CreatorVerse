@@ -90,7 +90,7 @@ function EditCreator() {
 
     if (loading) {
         return (
-            <loading />
+            <Loading />
         );
     }
 

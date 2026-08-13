@@ -32,7 +32,7 @@ function ShowCreators() {
     }, []);
 
     if (loading) {
-        return <loading/>;
+        return <Loading/>;
     }
 
     return (
