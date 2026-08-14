@@ -86,7 +86,7 @@ function AddCreator() {
 
             <section className="form-container">
 
-                {/* BÒ GOCH */}
+                {/* LEFT */}
 
                 <div className="form-info">
 
@@ -106,7 +106,7 @@ function AddCreator() {
                 </div>
 
 
-                {/* BÒ DWAT */}
+                {/* RIGHT */}
 
                 <form
                     className="creator-form"

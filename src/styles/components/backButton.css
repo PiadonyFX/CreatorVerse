@@ -31,9 +31,7 @@
 }
 
 
-/* =========================
-   TABLET + MOBILE
-========================= */
+/* TABLET + MOBILE */
 
 @media (max-width: 900px) {
 
@@ -43,9 +41,7 @@
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* SMALL MOBILE */
 
 @media (max-width: 480px) {
 

@@ -1,6 +1,4 @@
-/* =========================
-   FORM PAGE
-========================= */
+/* FORM PAGE*/
 .form-page-header {
     width: 100%;
     max-width: 1100px;
@@ -21,9 +19,7 @@
 }
 
 
-/* =========================
-   FORM CONTAINER
-========================= */
+/* FORM CONTAINER*/
 
 .form-container {
     width: 100%;
@@ -39,10 +35,7 @@
     align-items: start;
 }
 
-
-/* =========================
-   FORM INFO
-========================= */
+/*FORM INFO*/
 
 .form-info {
     min-width: 0;
@@ -77,9 +70,7 @@
 }
 
 
-/* =========================
-   FORM
-========================= */
+/* FORM*/
 
 .creator-form {
     display: flex;
@@ -102,9 +93,7 @@
 }
 
 
-/* =========================
-   FORM GROUP
-========================= */
+/* FORM GROUP*/
 
 .form-group {
     display: flex;
@@ -123,9 +112,7 @@
 }
 
 
-/* =========================
-   INPUTS
-========================= */
+/*INPUTS*/
 
 .creator-form input,
 .creator-form textarea {
@@ -171,9 +158,7 @@
 }
 
 
-/* =========================
-   IMAGE PREVIEW
-========================= */
+/*IMAGE PREVIEW */
 
 .image-preview {
     display: flex;
@@ -198,9 +183,7 @@
 }
 
 
-/* =========================
-   SUBMIT BUTTON
-========================= */
+/* SUBMIT BUTTON*/
 
 .creator-form button {
     width: fit-content;
@@ -209,9 +192,7 @@
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* TABLET*/
 
 @media (max-width: 900px) {
 
@@ -237,9 +218,7 @@
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/*  MOBILE*/
 
 @media (max-width: 600px) {
 
@@ -290,9 +269,7 @@
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* SMALL MOBILE*/
 
 @media (max-width: 400px) {
 

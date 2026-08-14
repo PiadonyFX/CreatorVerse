@@ -1,6 +1,4 @@
-/* =========================
-   CREATOR CARD
-========================= */
+/* CREATOR CARD */
 
 .creator-card {
     display: flex;
@@ -27,9 +25,7 @@
 }
 
 
-/* =========================
-   IMAGE
-========================= */
+/* IMAGE */
 
 .creator-image-wrapper {
     width: 100%;
@@ -47,10 +43,6 @@
     width: 100%;
     height: 100%;
 
-    /*
-       contain pèmèt tout imaj la rete vizib.
-       Sa evite koupe tèt creator la.
-    */
     object-fit: contain;
 
     object-position: center;
@@ -63,9 +55,7 @@
 }
 
 
-/* =========================
-   CONTENT
-========================= */
+/* CONTENT*/
 
 .creator-content {
     display: flex;
@@ -108,9 +98,7 @@
 }
 
 
-/* =========================
-   CHANNEL
-========================= */
+/* CHANNEL */
 
 .creator-channel {
     display: inline-block;
@@ -133,9 +121,7 @@
 }
 
 
-/* =========================
-   ACTIONS
-========================= */
+/* ACTIONS */
 
 .creator-actions {
     margin-top: auto;
@@ -146,9 +132,7 @@
 }
 
 
-/* =========================
-   DELETE BUTTON
-========================= */
+/* DELETE BUTTON*/
 
 .btn-danger {
     background: #d64545;
@@ -163,9 +147,7 @@
 }
 
 
-/* =========================
-   DETAIL CARD
-========================= */
+/* DETAIL CARD */
 
 .detail-card {
     display: grid;
@@ -200,9 +182,7 @@
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* TABLET*/
 
 @media (max-width: 900px) {
 
@@ -239,9 +219,7 @@
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media (max-width: 768px) {
 
@@ -318,9 +296,7 @@
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* SMALL MOBILE */
 
 @media (max-width: 400px) {
 
