@@ -9,31 +9,34 @@ function CreatorList() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        const fetchCreators = async () => {
+            const cachedCreators = sessionStorage.getItem("creators");
+
+            if (cachedCreators) {
+                setCreators(JSON.parse(cachedCreators));
+                setLoading(false);
+                return;
+            }
+
+            const { data, error } = await supabase
+                .from("creatorVerse")
+                .select("*");
+
+            if (error) {
+                console.error(error);
+            } else {
+                setCreators(data);
+                sessionStorage.setItem(
+                    "creators",
+                    JSON.stringify(data)
+                );
+            }
+
+            setLoading(false);
+        };
+
         fetchCreators();
     }, []);
-
-    async function fetchCreators() {
-        const cachedCreators = sessionStorage.getItem("creators");
-
-        if (cachedCreators) {
-            setCreators(JSON.parse(cachedCreators));
-            setLoading(false);
-            return;
-        }
-
-        const { data, error } = await supabase
-            .from("creatorVerse")
-            .select("*");
-
-        if (error) {
-            console.error(error);
-        } else {
-            setCreators(data);
-            sessionStorage.setItem("creators", JSON.stringify(data));
-        }
-
-        setLoading(false);
-    }
     if (loading) {
         return <Loading />;
     }
