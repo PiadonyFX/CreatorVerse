@@ -1,16 +1,66 @@
-# React + Vite
+# WEB103 Prework - *CreatorVerse*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Submitted by: **Duterron Piadony**
 
-Currently, two official plugins are available:
+About this web app: **CreatorVerse is a React web application that allows users to discover, view, add, edit, and delete content creators. Each creator has their own details page with their name, channel URL, description, and image. The application uses Supabase for data storage and features a responsive, futuristic interface designed for desktop, tablet, and mobile devices.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Time spent: **46** hours
 
-## React Compiler
+## Required Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The following required functionality is completed:
 
-## Expanding the ESLint configuration
+- [x] **A logical component structure in React is used to create the frontend of the app**
+- [x] **At least five content creators are displayed on the homepage of the app**
+- [x] **Each content creator item includes their name, a link to their channel/page, and a short description of their content**
+- [x] **API calls use the async/await design pattern via Axios or fetch()**
+- [ ] **Clicking on a content creator item takes the user to their details page, which includes their name, url, and description**
+- [x] **Each content creator has their own unique URL**
+- [x] **The user can edit a content creator to change their name, url, or description**
+- [x] **The user can delete a content creator**
+- [x] **The user can add a new content creator by entering a name, url, or description and then it is displayed on the homepage**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The following optional features are implemented:
+
+- [ ] PicoCSS is used to style HTML elements
+- [x] **The content creator items are displayed in a creative format, like cards instead of a list**
+- [x] **An image of each content creator is shown on their content creator card**
+
+The following additional features are implemented:
+
+- [x] **Responsive design for desktop, tablet, and mobile screen sizes**
+- [x] **Custom futuristic/cyber visual design with a dark theme and neon accents**
+- [x] **Loading spinner displayed while data is being fetched**
+- [x] **Toast notifications for successful and failed actions**
+- [x] **Form validation to prevent empty creator submissions**
+- [x] **Session storage caching to reduce unnecessary data requests**
+- [x] **Responsive back navigation for mobile and tablet users**
+- [x] **Application information/help interface accessible from the Hero section**
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented required features:
+
+👉🏿<img src='./creatorverse-walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with ScreenToGif.
+
+## Notes
+
+One of the main challenges of this project was building the application while keeping the React component structure organized and reusable. The project uses reusable components such as cards, containers, loading states, and notifications.
+
+Another challenge was integrating Supabase for storing and retrieving creator information while handling loading and error states.
+
+The application uses the Supabase client for database operations with the async/await pattern. The project does not directly use Axios or the native fetch() API for its data requests.
+
+The application was also designed to be responsive across desktop, tablet, and mobile screen sizes. Additional attention was given to user experience through form validation, loading indicators, toast notifications, caching, and responsive navigation.
+
+## License
+
+Copyright 2026 Duterron Piadony
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+> http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
