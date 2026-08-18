@@ -43,7 +43,7 @@ Here's a walkthrough of implemented required features:
 
 <img src='./public/walkthrough/creatorverse.gif' title='Video Walkthrough' alt='Video Walkthrough' />
 
-GIF created with ScreenToGif.
+GIF created with ScreenToGif...
 
 ## Notes
 
