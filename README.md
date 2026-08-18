@@ -2,7 +2,7 @@
 
 Submitted by: **Duterron Piadony**
 
-About this web app: **CreatorVerse is a React web application that allows users to discover, view, add, edit, and delete content creators. Each creator has their own details page with their name, channel URL, description, and image. The application uses Supabase for data storage and features a responsive, futuristic interface designed for desktop, tablet, and mobile devices.**
+About this web app: **CreatorVerse is a React-based CRUD application that allows users to discover, add, edit, and delete content creators stored in a Supabase database. Each creator has their own details page with their name, channel URL, description, and image. The application uses Supabase for data storage and features a responsive, futuristic interface designed for desktop, tablet, and mobile devices.**
 
 Time spent: **46** hours
 
@@ -13,8 +13,8 @@ The following required functionality is completed:
 - [x] **A logical component structure in React is used to create the frontend of the app**
 - [x] **At least five content creators are displayed on the homepage of the app**
 - [x] **Each content creator item includes their name, a link to their channel/page, and a short description of their content**
-- [x] **API calls use the async/await design pattern via Axios or fetch()**
-- [ ] **Clicking on a content creator item takes the user to their details page, which includes their name, url, and description**
+- [ ] **API calls use the async/await design pattern via Axios or fetch()**
+- [x] **Clicking on a content creator item takes the user to their details page, which includes their name, url, and description**
 - [x] **Each content creator has their own unique URL**
 - [x] **The user can edit a content creator to change their name, url, or description**
 - [x] **The user can delete a content creator**
@@ -41,7 +41,7 @@ The following additional features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src='./creatorverse-walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./public/walkthrough/creatorverse.gif' title='Video Walkthrough' alt='Video Walkthrough' />
 
 GIF created with ScreenToGif.
 
